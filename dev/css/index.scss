@@ -262,6 +262,8 @@
 .flag.flag-zm {background-position: -192px -165px}
 .flag.flag-zw {background-position: -208px -165px}
 
+
+
 // css
 $backgroundColor: #dcddef;
 $mainColor: #7597ce;
@@ -269,60 +271,84 @@ $mainColor: #7597ce;
 body, html{
     margin: 0;
     padding: 0;
-    
     background: $backgroundColor;
-   
-}
-
-
-
-h1{
-    text-align: center;
-    font-family:  Lobster;
-    font-weight: bold;
-    margin-top: 60px;
-    color: $mainColor;
-}
-.wrapper{
-    position: relative;
-    top: 40px;
-    margin: auto;
-    height: 800px;
-    width: 1000px;
-    background: $mainColor;
-    border-radius: 50px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.32), 0 3px 12px 0 rgba(0, 0, 0, 0.24);
-    .flags{
-        position: absolute;
-        left: 50px;
-        img{
+    
+    h1{
+        text-align: center;
+        font-family:  Lobster;
+        font-weight: bold;
+        margin-top: 60px;
+        color: $mainColor;
+    }
+    
+    .wrapper{
+        position: relative;
+        top: 40px;
+        margin: auto;
+        height: 800px;
+        width: 1000px;
+        background: $mainColor;
+        border-radius: 50px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.32), 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+        
+        .flags{
             position: absolute;
+            left: 50px;
+            img{
+                position: absolute;
+            }    
             
+        }
+        
+        .links{
+           position: absolute;
+           top: 100;
+           left: 50px;
+           margin: 0 auto;
+        }
+        
+        .tooltip{
+            position: absolute;
+            padding: 10px;
+            font-weight: bold;
+            font-family: Tahoma;
+            color: $mainColor;
+            background: $backgroundColor;
+            text-align: center;
+            border: none;
+            border-radius: 50%;
         }
     }
     
-    .links{
-       position: absolute;
-       top: 100;
-       left: 50px;
-       margin: 0 auto;
+    hr{
+        position: relative;
+        top: 60px;
+        border-color: $mainColor;
     }
-
-}
-
-hr{
-    position: relative;
-    top: 60px;
-}
-
-footer{
-    position: relative;
-    top: 40px;
-    text-align: center;
-    font-family: Tahoma;
-    padding: 20px;
     
-}
+    footer{
+        position: relative;
+        top: 40px;
+        text-align: center;
+        font-family: Tahoma;
+        padding: 20px;
+    }    
+    
+}    
+        
+   
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
